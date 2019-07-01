@@ -1,0 +1,739 @@
+.clear{
+    clear: both;
+    
+}
+
+
+@font-face{
+    font-family: Montserrat-bold;
+    src: url(../font/Montserrat/Montserrat-Bold.ttf);
+    font-family: Montserrat-medium;
+    src: url(../font/Montserrat/Montserrat-Regular.ttf);
+    font-family: playfair-display-bold;
+    src: url(../font/playfair-display/PlayfairDisplay-Bold.otf);
+}
+
+
+h2{
+    margin: 3.27% 0 0 4.10%;
+    font-size: 1.5em;
+    color: #1D00FF;
+    font-family: Montserrat-bold;
+}
+h1{
+    color: #1D00FF;
+    font-size: 5em;
+}
+header{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: white;
+    z-index: 3;
+}
+header .img{
+    background-image: url(../assets/logo-codeforkids.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 56px;
+    height: 56px;
+    float:left;
+    margin: 1.5% 9.46%; 
+}
+nav{
+    
+   padding: 32.5px 0 0 0;
+}
+nav ul{
+    
+    padding: 0.17% 9.46% 0 0;
+}
+nav a{
+    width: auto;
+    margin: 0 1.36% 0 1.36%;
+    float: right;
+    display: block;
+    color: #1D00FF;
+    font-size: 1em;
+    text-align: center;
+    font-family: Montserrat-bold;
+    text-decoration: none;
+    font-weight: bold;
+}
+main{
+    margin: 0 auto;
+    padding-top: 6%;
+}
+main .hero{
+    width:100%;
+    height: auto;
+    color: white;
+    background-image: linear-gradient(to bottom,rgba(29, 0, 255, .85),rgba(0, 118, 255, .85)),url(../img/daria-nepriakhina-736026-unsplash.jpg);
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 0 15% 0;
+
+}
+
+.hero h1{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-family: playfair-display-bold;
+    z-index: 2;
+    position: relative;
+    color: white;
+}
+
+.hero .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero h2{
+    font-size: 1.5em;
+    font-weight:lighter; 
+    width: 50%;
+    display: block;
+    color:white;
+    font-family: Montserrat-medium;
+    margin: 4.43% 0 4.43% 0;
+    position: relative;
+    z-index: 2;
+}
+
+.playlist{
+    position: relative;
+    width: 92.5%; 
+    padding-top:.25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -10%;
+    
+    background-color: white;
+    z-index: 2;
+}
+
+
+#accordion {
+    margin: 30px 60px 0 60px;
+    font-family: Montserrat-bold;
+    font-size: 1.5em;
+}
+#accordion .download{
+    float: right;
+    font-size: 0.75em;
+    border-radius: 10px;
+    background-color: black;
+    padding: .75% 1.5%;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+#accordion .download a{
+    color: white;
+    text-decoration: none;
+    margin: 2.5px 0 0 15px;
+}
+
+
+
+
+.ui-accordion-content{
+    width: 100%;
+    
+    color: white;
+    font-size: 18pt;
+    position: relative;
+    text-align: center;
+}
+
+
+
+    .ui-accordion-content p{
+        position: absolute;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .ui-accordion-content .controls{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+
+    #accordion .afspelen{
+        background-color: rgba(250,250,250);;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-image: url(../assets/playbutton.svg);
+        background-repeat: no-repeat;
+        background-position-x: 15px;
+        background-position-y: 20px;
+        float:left;
+        
+        margin: 0 20px;
+        margin-top: -15px;
+        display:none;
+    }
+    #accordion .rewind{
+        background-color: rgba(250,250,250);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: relative;
+        background-image: url(../assets/rewind.svg);
+        background-repeat: no-repeat;
+        background-position-x: 15px;
+        background-position-y: 17.5px;
+      
+        top: 15px;
+        float:left;
+        display:none;
+    }
+    #accordion .ui-accordion-content .checkIcon{
+        background-color: #BBFFB2;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: relative;
+        background-image: url(../assets/checkicon.svg);
+        background-repeat: no-repeat;
+        background-position-x: 12.5px;
+        background-position-y: 20px;
+        
+        top: 15px;
+        float:left;
+        display:none;
+    }
+
+#accordion .ui-accordion-content:hover .rewind{
+    display:block;
+}
+#accordion .ui-accordion-content:hover .afspelen{
+    display:block;
+}
+#accordion .ui-accordion-content:hover .checkIcon{
+    display:block;
+}
+#accordion h3{
+    padding: 2% 1% 1.5% 8%;
+    margin: 0;
+}
+#accordion img{
+    float:left;
+}
+#accordion button{
+    float: right;
+    border: 0px solid;
+    font-family: Montserrat-bold;
+    font-size: 0.75em;
+    margin-top: -10px;
+    padding: .75% 1.5%;
+    border-radius: 100px;
+}
+
+.ui-accordion-header-active{
+    color: #1D00FF;
+    outline: 2px solid #1D00FF;
+    background-image: url(../assets/arrowdown.svg);
+   background-size: 2% auto;
+    background-repeat: no-repeat;
+    background-position: 2%;
+}
+
+.ui-accordion-header-collapsed{
+    color: #4B4B4B;
+    outline: 2px solid #EBEBEB;
+    background-image: url(../assets/arrowright-accordion.svg);
+    background-size: 2% auto;
+    background-repeat: no-repeat;
+    background-position: 1%;
+}
+   
+
+   
+    .check{
+        width: 7.5%;
+        padding-top: 3%;
+        display:none;
+        background-image: url(../assets/checkicon.svg);
+        background-size: 37.5% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #BBFFB2;
+        border-radius: 100px;
+        margin: -10px;
+        margin-left: 20px;
+    }
+    
+  
+    #intro{
+        background-color: #FFAFE3;
+        color: #CC0085;
+    }
+    .workshop{
+        background-color:#D1E7FF;
+        color: #1D00FF;
+    }
+    
+
+   
+    
+   
+       
+    
+    
+
+  
+
+.support{
+    margin: 0 auto;
+    margin-top: 115px;
+    margin-bottom: 150px;
+    width: 92.5%;
+   height: auto;
+    background-color:white;
+}
+.support h2 {
+    margin-bottom: 20px;
+}
+.support h1 {
+    display: block;
+    text-align: left;
+    font-family: playfair-display-bold;
+    
+    margin: 0 0 0 60px;
+}
+
+.support .container{
+    margin: 0 auto;
+    width: 92.5%;
+    
+}
+
+.support .container .person-container{
+    margin: none;
+    margin-top: 100px;
+    width: 40%;
+    height:auto;
+    margin-right: 5%;
+    display: inline-block;
+}
+
+.person-container .image{
+    width: 168px;
+    height: 168px;
+
+    margin-right: 5%;
+    float: left;
+    border-radius: 100%;
+    
+    background-position: center;
+    background-size: 150% auto;
+    background-repeat: no-repeat;
+}
+.person-container #image-meisje1{
+    background-image: url(../img/kal-visuals-592091-unsplash.jpg);
+}
+.person-container #image-meisje2{
+    background-image: url(../img/alina-kovalchuk-1143928-unsplash.jpg);
+}
+.person-container #image-jongen1{
+    background-image: url(../img/giorgio-encinas-781653-unsplash.jpg);
+}
+.person-container #image-jongen2{
+    background-image: url(../img/norman-toth-177973-unsplash.jpg);
+}
+
+.person-container h3{
+  
+    margin: 40px 0 0 20px;
+    font-size: 2em;
+    font-family: montserrat-bold;
+}
+
+.person-container p{
+    
+    font-size: 2em;
+    font-family: montserrat-medium;
+    color: #EBEBEB;
+    margin: 0 0 0 20px;
+}
+
+.person-container button{
+    font-size: 1em;
+    color: white;
+    font-family: montserrat-bold;
+    background-color: black;
+    border-radius: 10px;
+    outline: none;
+    padding: 7.5px 24px;
+    margin: 20px 0 0 20px;
+    border: 0px solid;
+}
+
+.uitdaging{
+    width: 100%; 
+    height: auto;
+    background-image:linear-gradient(to bottom, rgba(255,175,227,.85),rgba(204,0,133,.85)),url(../img/nicole-wolf-1339717-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size:150% auto;
+    background-position: center;
+    text-align: center;
+    padding: 5% 0 0 0;
+    
+}
+
+
+
+.uitdaging button{
+    
+    font-size: 1em;
+    color: #FFAFE3;
+    font-family: montserrat-bold;
+    background-color:#1D00FF ;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px 24px;
+    margin-bottom: 80px;
+    border: 0px solid;
+}
+
+.uitdaging h1{
+    
+    display: inline-block;
+    font-family: playfair-display-bold;
+    color: white;
+    margin-bottom: 40px;
+ 
+    width: 50%;
+    
+}
+
+.uitdaging p{
+   
+    font-family: montserrat-medium;
+    margin-bottom: 40px;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 126px;
+    background-color: black;
+    color: white;
+    font-family: Montserrat-bold;
+    
+}
+
+footer h3{
+    float:left;
+    margin: 15px 10px 0 0 ;
+}
+
+ #switch {
+    visibility: hidden;
+    position: absolute;
+  
+}
+
+.switch-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    background: lightgray;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s all ease;
+    
+}
+
+.switch-label .toggle {
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background-color:white;
+    position: absolute;
+    left: 3px;
+    transition: .5s all ease;
+}
+
+.wrapper {
+    float:right;
+    margin-top: 45px;
+    margin-right: 27px;
+    width: 250px;
+}
+
+
+#switch:checked ~ .switch-label {
+    background: lightgrey;
+    border: none;
+    transition: .5s all ease;
+}
+
+#switch:checked ~ .switch-label .toggle {
+    height: 35px;
+    width: 35px;
+    border-radius:25px;
+    background: white;
+    
+    transform: scale(1) translateX(39px);
+    transition: .7s all ease;
+}
+
+
+
+.wrapper #sun{
+    float:left;
+    
+}
+
+#moon{
+    float: right;
+    margin-left: 10px;
+}
+
+
+header .white-logo{
+    background-image: url(../assets/logo-codeforkids-white.svg);
+}
+
+.dark .ui-accordion-header-active{
+    color: #0076FF;
+    background:black;
+    outline: 3px solid #0076FF;
+    background-image: url(../assets/arrowdown-lightblue.svg);
+    background-repeat: no-repeat;
+    background-position: 25px 25px;
+}
+.dark .ui-accordion-header-collapsed{
+    color:white;
+    background: black;
+    outline: 3px solid white;
+    background-image: url(../assets/arrowright-white.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 27.5px;
+}
+.dark .playlist{
+    background:black;
+}
+.dark .support{
+    background: black;
+}
+.dark main{
+    background: black;
+}
+.dark header{
+    background:black;
+}
+.dark .playlist h2{
+    color: white;
+}
+.dark nav a{
+    color:white;
+}
+.dark .support h2{
+    color:white;
+}
+.dark .support h1{
+    color: white;
+}
+
+
+.clickedPlay #accordion .ui-accordion-content .afspelen{
+    background-image: url(../assets/pause-button.svg);
+    background-repeat: no-repeat;
+    background-position-x: 30px;
+    background-position-y: 27.5px;
+}
+
+
+
+
+.pop-up-modal{
+    width: 35%;
+    height: 50%;
+    position: fixed;
+    background:  #BBFFB2;
+    z-index: 10;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding: 2%;
+    border-radius: 25px;
+    display:none;
+}
+
+.pop-up-modal button{
+    background: url(../assets/sluit-modal.svg);
+    background-size: 100% auto;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    float:right;
+    border: 0px solid;
+}
+
+.ml2 {
+    font-weight: 900;
+    font-size: 3.8em;
+    color:green;
+    font-family: montserrat-bold;
+    margin-top:5%;
+  }
+  .modal-wrapper{
+      margin-top: 15%;
+  }
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .show .pop-up-modal{
+    display: block;
+  }
+  
+
+@media only screen and (max-width: 1100px){
+
+    h1{
+        font-size: 3.25em;
+    }
+    .hero h2{
+        font-size: 1.25em;
+        width: 75%;
+    }
+    nav a{
+        font-size: 0.8em;
+    }
+    #accordion .download{
+        margin-top:0;
+        font-size: 0.8em;
+        
+    }
+    #accordion h3{
+        
+        font-size: 0.8em
+    }
+    #accordion button{
+        margin-top:0;
+        font-size: 0.8em
+        
+    }
+    .support h1{
+        margin-left: 18px;
+    }
+    #accordion .ui-accordion-header-collapsed{
+        background-position: 1% 15px;
+        
+    }
+    #accordion .ui-accordion-content{
+        font-size: .5em;
+    }
+    #accordion h3{
+        font-size: .75em;
+    }
+   
+    .check{
+        width: 7.5%;
+        margin-top: 4px;
+
+    }
+
+    
+    
+    
+    
+}
+
+
+
+@media only screen and (max-width: 700px){
+    .person-container h3{
+        margin-top: 5%;
+        font-size: 1em;
+    }
+    .person-container p{
+        font-size: 1em;
+        margin-top: 2%;
+    }
+    h2{
+        font-size: 1em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    .ui-accordion-header-active{
+       
+       background-size: 5% auto;
+        
+    }
+
+    .ui-accordion-header-collapsed{
+       
+        background-size: 5% auto;
+
+    }
+    #accordion .download{
+        margin-top: 10px;
+        margin-right: 10px;
+        padding: 2% 3%;
+    }
+
+    #accordion .download a{
+        display:none;
+    }
+
+    #accordion .workshop{
+        margin-top: 10px;
+        margin-right: 20px;
+        padding: 2% 3%;
+    }
+    #accordion #intro{
+        margin-right: 20px;
+        margin-top: 10px;
+        padding: 2% 3%;
+    }
+
+    .check{
+        width: 50px;
+        height: 10px;
+        margin: 0;
+        margin-top: 15px;
+        
+    }
+
+    #accordion .afspelen{
+        width: 55px;
+        height: 55px;
+        margin-top: 0;
+        background-size: 65% auto;
+        background-position:7.5px;
+    }
+
+    #accordion  .ui-accordion-content .checkIcon{
+        width: 35px;
+        height: 35px;
+        background-size: 65% auto;
+        background-position: center;
+    }
+    #accordion  .ui-accordion-content .rewind{
+        width: 35px;
+        height: 35px;
+        background-size: 65% auto;
+        background-position: center;
+    }
+}
